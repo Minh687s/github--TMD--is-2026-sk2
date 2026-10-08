@@ -1,1 +1,16 @@
-
+- [ ] Vyklonovat svůj repozitář na lokální počítač.
+  - Na školních počítačích používejte vždy složku `aaa` pro jakékoliv pracovní  adresáře a soubory.
+- [ ] Přejít do vyklonované složky (otevřít ji ve VS Code) a **nastavit identifikaci pro commity**.
+- [ ] Na lokále změnit obsah souboru `README.md` a provést první **commit** a následně tzv. **push** (`git push`) na GitHub.
+  - *Poznámka ke commitu:* Každý commit musí mít vyplněnou zprávu (commit message) stručně popisující provedenou změnu. Je zvykem odkázat i na konkrétní úkol/issue pomocí mřížky, např. `"Úprava README.md #3"` (případně `"Fixes #3"` pro automatické uzavření issue). Ve VS Code text zapište do pole nad tlačítkem Commit, v terminálu použijte parametr `-m` (např. `git commit -m "Úprava README.md #3"`).
+  - *Poznámka k přihlášení:* Při prvním odeslání (push) se zobrazí okno s výzvou k přihlášení do GitHubu (obvykle volba **Sign in with your browser**). Přihlaste se svým školním/osobním účtem a potvrďte autorizaci pro Git.
+- [ ] A nyní opačný postup => provést změnu `README.md` přímo na GitHubu a na lokále provést `git pull`.
+- [ ] Uvnitř vyklonované složky vytvořit složku s názvem `IS-Programy`
+- [ ] Do této složky přidat nový `README.md` soubor a do něj vložit nějaký text.
+- [ ] Pro tyto změny provést další commit a `git push`.
+- [ ] **Test zálohy a opětovné stažení (Delete & Clone):**
+  - Zavřete VS Code (nebo v terminálu vyskočte ze složky ven pomocí `cd ..`).
+  - Smažte celou lokální složku projektu uvnitř složky `aaa`.
+  - Vyklonujte repozitář znovu z GitHubu a otevřete jej ve VS Code.
+  - Ověřte, že v něm máte všechny soubory i vytvořenou složku `IS-Programy`.
+  - *Nezapomeňte:* Protože jste smazali celou lokální složku `.git`, nastavte znovu svou identitu pomocí `git config --local user.name "Vaše Jméno"` a `git config --local user.email "vas-email@example.com"`.
