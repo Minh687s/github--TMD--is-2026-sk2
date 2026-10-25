@@ -1,0 +1,109 @@
+// Vyčistí konzoli ještě před prvním zobrazením programu.
+Console.Clear();
+// Výchozí hodnota zajistí, že se hlavní část spustí alespoň jednou.
+string again = "a";
+// Po každém průchodu se program zopakuje jen tehdy, když uživatel zadá A nebo a.
+while(again.ToLower() == "a" )
+{
+    // Oddělí nové spuštění od předchozího výpisu.
+    Console.WriteLine();
+    // Odstraní předchozí obsah, aby každé opakování začínalo čistou obrazovkou.
+    Console.Clear();
+    // Horní ozdobná linka zahajuje textové záhlaví.
+    Console.WriteLine("******************************************");
+    // Název programu je díky rámečku snadno rozpoznatelný.
+    Console.WriteLine("*************** Výpis řady ***************");
+    // Následující linky uzavírají a vyplňují záhlaví.
+    Console.WriteLine("******************************************");
+    // Další ozdobný řádek zachovává původní výšku záhlaví.
+    Console.WriteLine("******************************************");
+    Console.WriteLine();
+    Console.WriteLine();
+
+    // Vyzve uživatele k zadání počátku číselné řady.
+    Console.Write("Zadejte první číslo řady (celé číslo): ");
+    // Proměnná uchová první hodnotu řady po úspěšném načtení.
+    int first;
+    // Opakuje dotaz, dokud se zadaný text nepodaří převést na celé číslo.
+    while(!int.TryParse(Console.ReadLine(), out first))
+    {
+        // Vysvětlí chybu a umožní uživateli zadat hodnotu znovu.
+        Console.Write("Nezadali jste celé číslo! Zadejte první číslo řady znovu (celé číslo): ");
+    }
+
+    // Vyzve uživatele k zadání horní hranice vypisované řady.
+    Console.Write("Zadejte poslední číslo řady (celé číslo): ");
+    // Proměnná uchová poslední hodnotu, kterou smí řada dosáhnout.
+    int last;
+    // Nenechá pokračovat s vstupem, když to není celé číslo a zopakuje dotaz.
+    while(!int.TryParse(Console.ReadLine(), out last))
+    {
+        // Požádá o opravu vstupu, protože bez čísla nelze určit konec řady.
+        Console.Write("Nezadali jste celé číslo! Zadejte poslední číslo řady znovu (celé číslo): ");
+    }
+
+    // Požádá o vzdálenost mezi sousedními členy číselné řady.
+    Console.Write("Zadejte diferenci (kladné celé číslo): ");
+    // Proměnná uchová hodnotu po úspěšném načtení.
+    int step;
+    // Přijme pouze celé číslo větší nebo rovno nula, jinak vstup vyžádá znovu.
+    while(!int.TryParse(Console.ReadLine(), out step) || step <= 0 )
+    {
+        // Upozorní, že to musí být kladné celé číslo.
+        Console.Write("Diference musí být kladné celé číslo! Zadejte diferenci znovu (kladné celé číslo): ");
+    }
+
+    // Vizuálně oddělí souhrn hodnot od předchozích dotazů.
+    Console.WriteLine();
+    // Otevírací linka souhrnu pomáhá odlišit jeho začátek.
+    Console.WriteLine("============================================");
+    // Umožní uživateli zkontrolovat všechny tři hodnoty před výpisem řady.
+    Console.WriteLine($"První číslo: {first}; Poslední číslo: {last}; Diference (krok): {step}");
+    // Uzavírá vizuální rámeček souhrnu.
+    Console.WriteLine("============================================");
+    // Nechá mezi souhrnem a výsledkem volný řádek pro lepší čitelnost.
+    Console.WriteLine();
+    // Jádro algoritmu pro výpis řady   
+    Console.WriteLine("Výpis číselné řady: ");
+    
+    // Ověří, že zadané meze odpovídají podporovanému směru výpisu.
+    if (first <= last)
+    {
+        // Nastaví první vypsanou hodnotu na začátek zadané řady.
+        int current = first;
+        // Pokračuje, dokud aktuální hodnota nepřekročí zadaný konec.
+        while(current <= last) {
+            // Zobrazí právě zpracovávaný člen řady.
+            Console.WriteLine(current);
+            // Posune se na následující člen podle zadaného kroku.
+            current += step;
+        }
+    }
+    // Při opačném pořadí mezí se místo řady zobrazí vysvětlení problému.
+    else
+    {
+        // Oznámí, že vstupní meze neumožňují vytvořit vzestupnou řadu.
+        Console.WriteLine("Řadu nelze vypsat!");
+        // Určí konkrétní důvod, proč se výpis neprovedl.
+        Console.WriteLine("První číslo je větší než poslední.");
+        // Připomene omezení programu, aby bylo zřejmé, jak vstup opravit.
+        Console.WriteLine("Tento program umí vypsat pouze vzestupnou řadu (od menšího k většímu).");
+    }
+
+    // Oddělí výsledek od závěrečného dotazu.
+    Console.WriteLine();
+    // Přidá další volný řádek, aby závěrečné pokyny nebyly nalepené na výpis.
+    Console.WriteLine();
+    // Vysvětlí, jak spustit další průchod programu.
+    Console.WriteLine("Pro opakování programu stislněte klávesu a. Následně potvrďte klávesou Enter. ");
+    // Upozorní, že jiné zadání ukončí opakovací smyčku.
+    Console.WriteLine("Jakokouli jinou klávesou program ukončíte.");
+    // Oddělí pokyny od samotného vstupního řádku.
+    Console.WriteLine();
+    // Získá rozhodnutí uživatele o dalším spuštění.
+    Console.Write("Chcete program spustit znovu? ");
+    // Uloží odpověď; prázdný text nahradí případnou hodnotu null při ukončení vstupu.
+    again = Console.ReadLine() ?? "";
+
+// Konec těla opakovací smyčky; podmínka se znovu vyhodnotí s poslední odpovědí.
+}
