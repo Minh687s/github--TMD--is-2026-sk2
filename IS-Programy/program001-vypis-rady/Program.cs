@@ -63,16 +63,12 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     // Jádro algoritmu pro výpis řady
     Console.WriteLine("Výpis číselné řady: ");
-    
-    if (first <= last)
+
+   if (first <= last)
     {
         int current = first;
         while(current <= last) {
             Console.WriteLine(current);
-            // Výpis řady vypsaná vedle sebe
-            // Console.Write($"{current}; ");
-            // current = current + step;
-            // předchozí řádek lze napsat stručněji
             current += step;
         }
     }

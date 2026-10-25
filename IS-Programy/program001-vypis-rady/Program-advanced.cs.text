@@ -1,0 +1,74 @@
+Console.Clear();
+string again = "a";
+while(again.ToLower() == "a" )
+{
+    Console.WriteLine();
+    Console.Clear();
+    Console.WriteLine("******************************************");
+    Console.WriteLine("*************** Výpis řady ***************");
+    Console.WriteLine("******************************************");
+    Console.WriteLine("******************************************");
+    Console.WriteLine("******************************************");
+    Console.WriteLine("******************************************");
+    Console.WriteLine(); 
+    Console.WriteLine("Tento program vypíše vzestupnou řadu (od menšího k většímu), když první číslo je menší než poslední.");
+    Console.WriteLine("Tento program vypíše sestupnou řadu (od většího k menšímu), když první číslo je větší než poslední.");
+    Console.WriteLine();
+    Console.Write("Zadejte první číslo řady (celé číslo): ");
+    int first;
+    while(!int.TryParse(Console.ReadLine(), out first))
+    {
+        Console.Write("Nezadali jste celé číslo! Zadejte první číslo řady znovu (celé číslo): ");
+    }
+
+    Console.Write("Zadejte poslední číslo řady (celé číslo): ");
+    int last;
+    while(!int.TryParse(Console.ReadLine(), out last))
+    {
+        Console.Write("Nezadali jste celé číslo! Zadejte poslední číslo řady znovu (celé číslo): ");
+    }
+    Console.Write("Zadejte diferenci (kladné celé číslo): ");
+    int step;
+    while(!int.TryParse(Console.ReadLine(), out step) || step <= 0 )
+    {
+        Console.Write("Diference musí být kladné celé číslo! Zadejte diferenci znovu (kladné celé číslo): ");
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("============================================");
+    Console.WriteLine($"První číslo: {first}; Poslední číslo: {last}; Diference (krok): {step}");
+    Console.WriteLine("============================================");
+    Console.WriteLine();
+    // Jádro algoritmu pro výpis řady
+    Console.WriteLine("Výpis číselné řady: ");
+
+    if (first == last)
+    {
+        Console.WriteLine(first);
+    }
+    else if (first < last)
+    {
+        int current = first;
+        while(current <= last) {
+            Console.WriteLine(current);
+            current += step;
+        }
+    }
+    else
+    {
+        int current = first;
+        while(current >= last) {
+            Console.WriteLine(current);
+            current -= step;
+        }
+    }
+
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine("Pro opakování programu stislněte klávesu a. Následně potvrďte klávesou Enter. ");
+    Console.WriteLine("Jakokouli jinou klávesou program ukončíte.");
+    Console.WriteLine();
+    Console.Write("Chcete program spustit znovu? ");
+    again = Console.ReadLine() ?? "";
+
+}
