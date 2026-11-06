@@ -32,6 +32,7 @@ while(again.ToLower() == "a" )
     int numberbackup = number; // Záloha původního čísla pro závěrečný výpis
     int sum = 0; // Neutrální hodnotou pro sčítání je 0
     int digit; //Proměnná pro uložení právě zpracované číslice
+    int multiplier = 1;
     // 2. Ošetření záporných čísel (znaménko nemá vliv na součet čísel)
     if (number < 0)
     {
@@ -41,6 +42,7 @@ while(again.ToLower() == "a" )
     if (number == 0)
     {
         sum = 0;
+        multiplier = 0;
     }
     else
     {
@@ -52,10 +54,12 @@ while(again.ToLower() == "a" )
             // Operátoru % se říká MODULO (slouží k určení zbytku po celočíselném dělení)
             digit = number % 10; // MODULO 10 nám získá poslední číslici 
             sum = sum += digit; // Přičtení číslice k celkovému součtu
+            multiplier = multiplier *= digit; // Přičtení číslice k celkovému součinu
             number = number /= 10; // Celočíselné dělení 10kou odstraní poslední číslici
             Console.WriteLine($"Aktuální číslice (zbytek): {digit}");
             Console.WriteLine($"Číslo po odříznutí aktuální  číslice: {number}");
             Console.WriteLine($"Aktuální hodnota součtu: {sum}");
+            Console.WriteLine($"Aktuální hodnota součinu: {multiplier}");
         }
     }
     // Jádro algoritmu 
@@ -64,6 +68,7 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.WriteLine("===============================================");
     Console.WriteLine($"Ciferný součet čísla {numberbackup} je: {sum}");
+    Console.WriteLine($"Ciferný součin čísla {numberbackup} je: {multiplier}");
     Console.WriteLine("===============================================");
     Console.WriteLine();
 
