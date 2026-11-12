@@ -43,23 +43,24 @@ while(again.ToLower() == "a" )
     // Vnější cyklus, počet řádků (výška)
     for (int i = 1; i <= height; i++)
     {
+        if (i % 2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else 
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
         // Vnitřní  cyklus
         for (int j = 1; j <= width; j++)
         {
         Console.Write("* ");
+        System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(100));
         }
+        Console.WriteLine();
     }
-
-
-
-
-   
-
-    
-
-
     // Jádro algoritmu
-    
+    Console.ResetColor();
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
     Console.WriteLine();
