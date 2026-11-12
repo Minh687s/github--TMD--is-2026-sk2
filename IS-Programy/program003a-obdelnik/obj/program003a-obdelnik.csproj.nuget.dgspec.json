@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aaa\\github--TMD--is-2026-sk2\\program002b-soucet-cifer\\program002b-soucet-cifer.csproj": {}
+    "C:\\aaa\\github--TMD--is-2026-sk2\\IS-Programy\\program003a-obdelnik\\program003a-obdelnik.csproj": {}
   },
   "projects": {
-    "C:\\aaa\\github--TMD--is-2026-sk2\\program002b-soucet-cifer\\program002b-soucet-cifer.csproj": {
+    "C:\\aaa\\github--TMD--is-2026-sk2\\IS-Programy\\program003a-obdelnik\\program003a-obdelnik.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aaa\\github--TMD--is-2026-sk2\\program002b-soucet-cifer\\program002b-soucet-cifer.csproj",
-        "projectName": "program002b-soucet-cifer",
-        "projectPath": "C:\\aaa\\github--TMD--is-2026-sk2\\program002b-soucet-cifer\\program002b-soucet-cifer.csproj",
+        "projectUniqueName": "C:\\aaa\\github--TMD--is-2026-sk2\\IS-Programy\\program003a-obdelnik\\program003a-obdelnik.csproj",
+        "projectName": "program003a-obdelnik",
+        "projectPath": "C:\\aaa\\github--TMD--is-2026-sk2\\IS-Programy\\program003a-obdelnik\\program003a-obdelnik.csproj",
         "packagesPath": "C:\\Users\\dangt\\.nuget\\packages\\",
-        "outputPath": "C:\\aaa\\github--TMD--is-2026-sk2\\program002b-soucet-cifer\\obj\\",
+        "outputPath": "C:\\aaa\\github--TMD--is-2026-sk2\\IS-Programy\\program003a-obdelnik\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dangt\\AppData\\Roaming\\NuGet\\NuGet.Config"
