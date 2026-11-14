@@ -1,0 +1,15 @@
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\bin\Debug\net10.0\program003c-dalsiobrazce.exe
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\bin\Debug\net10.0\program003c-dalsiobrazce.deps.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\bin\Debug\net10.0\program003c-dalsiobrazce.runtimeconfig.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\bin\Debug\net10.0\program003c-dalsiobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\bin\Debug\net10.0\program003c-dalsiobrazce.pdb
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.GeneratedMSBuildEditorConfig.editorconfig
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.AssemblyInfoInputs.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.AssemblyInfo.cs
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.csproj.CoreCompileInputs.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.sourcelink.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\refint\program003c-dalsiobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.pdb
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\program003c-dalsiobrazce.genruntimeconfig.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-dalsiobrazce\obj\Debug\net10.0\ref\program003c-dalsiobrazce.dll
