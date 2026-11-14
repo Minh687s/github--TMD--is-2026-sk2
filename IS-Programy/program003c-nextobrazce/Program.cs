@@ -67,7 +67,6 @@ while(again.ToLower() == "a" )
         }
         Console.WriteLine();
     }
-    Console.WriteLine();
     
     // Jádro algoritmu
     Console.ResetColor();
