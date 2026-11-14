@@ -1,0 +1,15 @@
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\bin\Debug\net10.0\program003c-nextobrazce.exe
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\bin\Debug\net10.0\program003c-nextobrazce.deps.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\bin\Debug\net10.0\program003c-nextobrazce.runtimeconfig.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\bin\Debug\net10.0\program003c-nextobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\bin\Debug\net10.0\program003c-nextobrazce.pdb
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.GeneratedMSBuildEditorConfig.editorconfig
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.AssemblyInfoInputs.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.AssemblyInfo.cs
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.csproj.CoreCompileInputs.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.sourcelink.json
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\refint\program003c-nextobrazce.dll
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.pdb
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\program003c-nextobrazce.genruntimeconfig.cache
+C:\aaa\github--TMD--is-2026-sk2\IS-Programy\program003c-nextobrazce\obj\Debug\net10.0\ref\program003c-nextobrazce.dll
