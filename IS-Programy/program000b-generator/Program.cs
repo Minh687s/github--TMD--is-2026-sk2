@@ -43,9 +43,14 @@ while(again.ToLower() == "a" )
     Console.WriteLine("============================================");
     Console.WriteLine();
     // Jádro algoritmu 
-
-
-
+    int[] myRandNumbs = new int[n];
+    Random myRandNumb = new Random();
+    Console.WriteLine("Generovaná pseudonáhodná čísla: ");
+    for (int i = 0; i < myRandNumbs.Length; i++)
+    {
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound + 1);
+        Console.Write ($"{myRandNumbs[i]}; ");
+    }
 
 
    
@@ -64,4 +69,4 @@ while(again.ToLower() == "a" )
     Console.Write("Chcete program spustit znovu? ");
     again = Console.ReadLine() ?? "";
 
-}
+} 
