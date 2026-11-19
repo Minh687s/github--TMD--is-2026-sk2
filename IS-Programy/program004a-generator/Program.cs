@@ -45,17 +45,44 @@ while(again.ToLower() == "a" )
     // Jádro algoritmu 
     int[] myRandNumbs = new int[n];
     Random myRandNumb = new Random();
+    int negativeNumbs = 0;
+    int positiveNumbs = 0;
+    int zeros = 0;
+    int evenNumbs = 0;
+    int oddNumbs = 0;
     Console.WriteLine("Generovaná pseudonáhodná čísla: ");
     for (int i = 0; i < myRandNumbs.Length; i++)
     {
         myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound + 1);
         Console.Write ($"{myRandNumbs[i]}; ");
+        if (myRandNumbs[i] < 0)
+        {
+            negativeNumbs++;
+        }
+        else if (myRandNumbs[i] > 0)
+        {
+            positiveNumbs++;
+        }
+        else
+        {
+            zeros++;
+        }
+
+        if (myRandNumbs[i] % 2 == 0)
+        {
+            evenNumbs++;
+        }
+        else
+        {
+            oddNumbs++;
+        }
     }
 
-
-   
-
-    
+    Console.WriteLine();
+    Console.WriteLine("============================================");
+    Console.WriteLine($"Počet záporných čísel: {negativeNumbs}; Počet kladných čísel: {positiveNumbs}; Počet nul: {zeros}");
+    Console.WriteLine($"Počet sudých čísel: {evenNumbs}; Počet lichých čísel: {oddNumbs}");
+    Console.WriteLine("============================================");
 
 
     // Jádro algoritmu
